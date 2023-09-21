@@ -18,6 +18,7 @@ struct ContentView: View {
                 .font(.largeTitle)
         }
         .sheet(isPresented: $isShowBView) {
+            //StateからBindingに値渡し
             BView(isShowBView: $isShowBView)
         }
     }

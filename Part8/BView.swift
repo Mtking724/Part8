@@ -18,6 +18,7 @@ struct BView: View {
                 Text("BView")
                     .font(.largeTitle)
                 Button {
+                    isShowBView = false
                 } label: {
                     Text("閉じる")
                         .font(.largeTitle)
