@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BView: View {
+    @Binding var isShowBView: Bool
+    
     var body: some View {
         ZStack {
             Color(.orange)
@@ -25,12 +27,6 @@ struct BView: View {
                         .cornerRadius(10)
                 }
             }
-        }
-    }
-    
-    struct BView_Previews: PreviewProvider {
-        static var previews: some View {
-            BView()
         }
     }
 }

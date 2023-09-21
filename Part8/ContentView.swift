@@ -18,7 +18,7 @@ struct ContentView: View {
                 .font(.largeTitle)
         }
         .sheet(isPresented: $isShowBView) {
-            BView()
+            BView(isShowBView: $isShowBView)
         }
     }
 }
