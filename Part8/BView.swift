@@ -12,14 +12,25 @@ struct BView: View {
         ZStack {
             Color(.orange)
                 .edgesIgnoringSafeArea(.all)
-            Text("BView")
-                .font(.largeTitle)
+            VStack {
+                Text("BView")
+                    .font(.largeTitle)
+                Button {
+                } label: {
+                    Text("閉じる")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+            }
         }
     }
-}
-
-struct BView_Previews: PreviewProvider {
-    static var previews: some View {
-        BView()
+    
+    struct BView_Previews: PreviewProvider {
+        static var previews: some View {
+            BView()
+        }
     }
 }
